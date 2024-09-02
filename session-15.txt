@@ -185,16 +185,18 @@ Addresses:
 
 
 
-[ means list
+to connect ansible server to DB_HOST
+------------------------------------
+ ansible -i 172.31.43.195,all -e ansible-user=ec2-user -e ansible_password=DevOps321 -m ping
 
-Milestone:2
----------------
-the same project you automated through shell scripting
+to install nginx in node
+-------------------------
+ansible -i 172.31.43.195, all -e ansible-user=ec2-user -e ansible_password=DevOps321 -b -m dnf -a "name=nginx state=installed"
 
-1. advantages
-2. challenges
-3. errors
-4. final take
+to start the nginx in node
+--------------------------
+ansible -i 172.31.43.195, all -e ansible-user=ec2-user -e ansible_password=DevOps321 -b -m service -a "name=nginx state=started"
+
 
 
 
