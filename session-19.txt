@@ -1,4 +1,4 @@
- I will provide host, username and password
+1. I will provide host, username and password
 2. fail, if it does not setup
 3. now create root password
 4. if pass skip it
